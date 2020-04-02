@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
     path('register/',views.register,name='register'),
-    path('login/',views.user_login,name='user_login'),
+    # Don't use keyword login/!
+    path('user_login/',views.user_login,name='user_login'),
     path('logout/', views.ulogout, name='logout'),
 ]
 
